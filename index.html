@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>PaintJS</title>
+</head>
+<body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+       
+        <div class="controls__range">
+            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1"/>
+        </div>
+        <div class="controls__btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+            <button id="jsReset">Reset</button>
+        </div>
+        <div class="viewColorName">
+            <input type="text" id="colorName" value="rgb(44,44,44)" readonly>
+        </div>
+        <div class="controls__colors" id = "jsColors">
+            <div class="controls__color jsColor
+            " style="background-color: #2c2c2c;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #FFFFFF;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #FF3B30;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #FF9500;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #FFCC00;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #4CD963;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #5AC8FA;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #0579FF;"></div>
+            <div class="controls__color jsColor
+            " style="background-color: #5856D6;"></div>
+        </div>
+        <div class="modal hidden">
+            <div class="md_overlay">
+            </div>
+            <div class="md_content">
+                <h1>초기화 하시겠습니까?</h1>
+                <div id="resetAnswer">
+                <input type="button" class="resetAnswerBtn" id="resetYes" value="예"/>
+                <input type="button" class="resetAnswerBtn" id="resetNo" value="아니오"/>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
